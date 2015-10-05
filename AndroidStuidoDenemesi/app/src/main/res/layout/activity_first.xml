@@ -28,4 +28,12 @@
         android:layout_margin="20dp"
         android:text="Go to Second"/>
 
+
+    <Button
+        android:id="@+id/bImplicitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bGotoSecond"
+        android:text="Implicit Intent"/>
+
 </RelativeLayout>

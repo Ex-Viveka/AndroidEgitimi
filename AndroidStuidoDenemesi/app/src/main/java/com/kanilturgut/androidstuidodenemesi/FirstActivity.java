@@ -1,6 +1,7 @@
 package com.kanilturgut.androidstuidodenemesi;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -26,6 +27,19 @@ public class FirstActivity extends AppCompatActivity {
                 Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
                 intent.putExtra("key", editText.getText().toString());
                 startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.bImplicitButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("FirstActivity", "Implicit Intent butonu tıklandı");
+
+                String url = "http://google.com";
+
+                Intent implicitIntent = new Intent(Intent.ACTION_VIEW);
+                implicitIntent.setData(Uri.parse(url));
+                startActivity(implicitIntent);
             }
         });
     }
