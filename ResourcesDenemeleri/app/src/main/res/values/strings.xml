@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ResourcesDenemeleri</string>
+
+    <!-- Bizim stringlerimiz -->
+    <string name="egitim">Bilişim Mucitleri</string>
+    <string name="my_name">Kadir Anıl Turğut</string>
+    <string name="greeting">Hello World!</string>
+    <string name="my_job">Bilgisayar Mühendisi</string>
+
+</resources>
