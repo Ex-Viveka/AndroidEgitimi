@@ -1,0 +1,17 @@
+AndroidManifest.xml
+Layout objeleri
+    Linear, Relative, Frame
+    TextView, EditText, Button, ImageView
+Activity ve yaşam döngüsü
+Intent
+Fragmentlar
+
+
+Resources, shape, selector
+Drawable, adjustViewBounds, scaleType (ImageView)
+ListView, simpleList, customList, ArrayAdapter
+RecyclerView (ViewHolder pattern)
+Dialogs
+    AlertDialogs
+    ProgressDialog
+    CustomDialog
