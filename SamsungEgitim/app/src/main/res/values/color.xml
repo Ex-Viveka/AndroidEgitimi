@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#F16C63</color>
+    <color name="colorPrimaryDark">#FF1111</color>
+
+    <color name="textColorPrimary">#FFF</color>
+    <color name="textColorSecondary">#000</color>
+
+    <!--<color name="app_background">#ededff</color>-->
+    <color name="app_background">@color/white</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="opaq_white">#AAFFFFFF</color>
+    <color name="black">#000</color>
+    <color name="green">#3BB8B8</color>
+    <color name="dark_blue">#2D3860</color>
+
+    <color name="main_blue_color">#59C6F2</color>
+    <color name="main_red_color">#F16C63</color>
+    <color name="main_yellow_color">#F7D246</color>
+
+    <color name="main_blue_color_transparent">#5059C6F2</color>
+
+    <color name="grey_border">#ffbababa</color>
+    <color name="passive_view">#f1f1f1</color>
+
+    <color name="sticky_color">#EED163</color>
+    <color name="approved_color">#22C969</color>
+    <color name="deny_color">#F16C63</color>
+    <color name="waiting_color">#A729E8</color>
+    <color name="button_color">#FEFEFE</color>
+
+    <color name="sticky_color_dark">#A69245</color>
+    <color name="approved_color_dark">#178c49</color>
+    <color name="deny_color_dark">#a84b45</color>
+    <color name="waiting_color_dark">#741ca2</color>
+
+    <color name="hint_color">#666</color>
+
+    <color name="refresh_progress_1">#e91e63</color>
+    <color name="refresh_progress_2">#00b0ff</color>
+    <color name="refresh_progress_3">#3f51b5</color>
+
+    <color name="passive_text_color">#e1e0e0</color>
+    <color name="passive_rect">#f3f2f2</color>
+
+    <color name="woto_blue">#47479b</color>
+    <color name="woto_blue_dark">#2b2b89</color>
+    <color name="woto_blue_darker">#2b2b89</color>
+    <color name="woto_green">#1cb7bd</color>
+
+    <color name="notification_badge">#fd3c2b</color>
+
+    <color name="woto_blue_trans">#dd46479b</color>
+    <color name="woto_blue_dash">#3046479b</color>
+    <color name="search_bar_color">#F5F3F8</color>
+
+    <color name="selected_icon_background">#E6E6E6</color>
+
+    <color name="confirmation">#109848</color>
+    <color name="warning">#dec423</color>
+    <color name="error">#d8203a</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+
+    <color name="selected">#e6e6e6</color>
+
+    <color name="border_color">#C6C5DE</color>
+    <color name="grey">#9B9B9B</color>
+</resources>

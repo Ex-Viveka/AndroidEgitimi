@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kanilturgut.samsungegitim.multimedia.camera_intent.CameraIntentActivity">
+
+    <ImageView
+        android:id="@+id/ivTakenPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llControlLayout"/>
+
+    <LinearLayout
+        android:id="@+id/llControlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bTakePhoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thumbnail"/>
+
+        <Button
+            android:id="@+id/bTakePhotoFullSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FullSize"/>
+
+        <Button
+            android:id="@+id/bFromGallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gallery"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

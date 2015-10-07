@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kanilturgut.samsungegitim" >
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".navigation_with_data.FirstActivity"
+            android:label="@string/title_activity_first" >
+        </activity>
+        <activity
+            android:name=".navigation_with_data.SecondActivity"
+            android:label="@string/title_activity_second" >
+        </activity>
+        <activity
+            android:name=".onSaveInstanceState.OnSaveInstanceExample1"
+            android:label="@string/title_activity_on_save_instance_example1" >
+        </activity>
+        <activity
+            android:name=".onSaveInstanceState.OnSaveInstanceExample2"
+            android:label="@string/title_activity_on_save_instance_example2" >
+        </activity>
+        <activity android:name=".drawable.DrawableActivity" >
+        </activity>
+        <activity android:name=".lists.ListViewActivity" >
+        </activity>
+        <activity android:name=".dialogs.DialogsActivity" >
+        </activity>
+        <activity android:name=".sharedpreferences.SharedPreferencesActivity" >
+        </activity>
+        <activity android:name=".database.DatabaseActivity" >
+        </activity>
+        <activity android:name=".threading.ThreadingActivity" >
+        </activity>
+        <activity android:name=".menu.OptionsMenuActivity" >
+        </activity>
+        <activity
+            android:name=".menu.SideMenuActivity"
+            android:label="@string/title_activity_side_menu"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".multimedia.camera_intent.CameraIntentActivity" >
+        </activity>
+        <activity android:name=".multimedia.camera_intent.VideoActivity" >
+        </activity>
+        <activity android:name=".multimedia.camera_intent.AudioActivity" >
+        </activity>
+        <activity android:name=".lifecycle.ActivityOne" >
+        </activity>
+        <activity android:name=".lifecycle.ActivityTwo" >
+        </activity>
+    </application>
+
+</manifest>
