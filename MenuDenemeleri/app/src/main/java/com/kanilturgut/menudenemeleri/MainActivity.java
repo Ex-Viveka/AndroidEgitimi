@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         int menuItemId = item.getItemId();
-                        
+
                         if (menuItemId == R.id.action_popup_first) {
                             Toast.makeText(mContext, getResources().getString(R.string.popup_menu_first), Toast.LENGTH_SHORT).show();
                             return true;
