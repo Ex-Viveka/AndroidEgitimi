@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MenuDenemeleri</string>
+
+    <string name="menu_item_first_text">Ekle</string>
+    <string name="menu_item_second_text">Çıkar</string>
+
+    <string name="main_activity_popup_button_text">Popup Göster</string>
+
+    <string name="popup_menu_first">First Item Clicked</string>
+    <string name="popup_menu_second">Second Item Clicked</string>
+    <string name="popup_menu_third">Third Item Clicked</string>
+    <string name="popup_menu_fourth">Fourth Item Clicked</string>
+
+</resources>
