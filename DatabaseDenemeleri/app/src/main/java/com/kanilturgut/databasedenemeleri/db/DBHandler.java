@@ -65,7 +65,7 @@ public class DBHandler extends SQLiteOpenHelper {
                 + COL_YAZAR + " text, "
                 + COL_YAYINEVI + " text, "
                 + COL_SAYFA_SAYISI + " integer, "
-                + COL_FIYAT + " real, "
+                + COL_FIYAT + " real"
                 + " );";
 
         db.execSQL(create);
@@ -151,4 +151,54 @@ public class DBHandler extends SQLiteOpenHelper {
 
         return list;
     }
+
+    // CRUD --> U
+    public boolean update(Book book, int id) {
+
+        int affectedRow = 0;
+        SQLiteDatabase db = getWritableDatabase();
+        db.beginTransaction();
+
+        try {
+            ContentValues contentValues = new ContentValues();
+            contentValues.put(COL_ADI, book.getName());
+            contentValues.put(COL_YAZAR, book.getAuthor());
+            contentValues.put(COL_YAYINEVI, book.getPublisher());
+            contentValues.put(COL_SAYFA_SAYISI, book.getNumberOfPage());
+            contentValues.put(COL_FIYAT, book.getPrice());
+
+            affectedRow = db.update(TABLE_NAME, contentValues, COL_ID + " =? ", new String[]{
+                    String.valueOf(id)
+            });
+            db.setTransactionSuccessful();
+
+        } catch (Exception e) {
+            Log.e(TAG, "ERROR on update operation", e);
+        } finally {
+            db.endTransaction();
+        }
+
+        return affectedRow == 1;
+    }
+
+
+    public boolean delete(int id) {
+
+        int affectedRow = 0;
+
+        SQLiteDatabase db = getWritableDatabase();
+        db.beginTransaction();
+
+        try {
+            affectedRow = db.delete(TABLE_NAME, COL_ID + " =? ", new String[]{String.valueOf(id)});
+            db.setTransactionSuccessful();
+        } catch (Exception e) {
+            Log.e(TAG, "ERROR on delete operation", e);
+        } finally {
+            db.endTransaction();
+        }
+
+        return affectedRow == 1;
+    }
+
 }
