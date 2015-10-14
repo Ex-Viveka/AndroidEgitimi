@@ -14,6 +14,7 @@ import com.kanilturgut.samsungegitim.database.DatabaseActivity;
 import com.kanilturgut.samsungegitim.dialogs.DialogsActivity;
 import com.kanilturgut.samsungegitim.lifecycle.ActivityOne;
 import com.kanilturgut.samsungegitim.lists.ListViewActivity;
+import com.kanilturgut.samsungegitim.lists.RecyclerCardRefreshActivity;
 import com.kanilturgut.samsungegitim.menu.OptionsMenuActivity;
 import com.kanilturgut.samsungegitim.menu.SideMenuActivity;
 import com.kanilturgut.samsungegitim.multimedia.camera_intent.AudioActivity;
@@ -21,6 +22,7 @@ import com.kanilturgut.samsungegitim.multimedia.camera_intent.CameraIntentActivi
 import com.kanilturgut.samsungegitim.multimedia.camera_intent.VideoActivity;
 import com.kanilturgut.samsungegitim.navigation_with_data.FirstActivity;
 import com.kanilturgut.samsungegitim.onSaveInstanceState.OnSaveInstanceExample1;
+import com.kanilturgut.samsungegitim.receiver.ConnectivityReceiverActivity;
 import com.kanilturgut.samsungegitim.sharedpreferences.SharedPreferencesActivity;
 import com.kanilturgut.samsungegitim.threading.ThreadingActivity;
 
@@ -29,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private ListView lvSubjectList;
     private final String[] SUBJECTS = {"Activity Class", "Basic View Components", "Activity LifeCycle",
             "Navigation with Data", "onSaveInstanceState", "Lists", "Dialogs", "SharedPreferences",
-            "Database", "Threading", "OptionMenu", "Side Menu", "Simple Camera", "Video", "Audio"};
+            "Database", "Threading", "OptionMenu", "Side Menu", "Simple Camera", "Video", "Audio",
+            "BroadcastReceiver", "Recycler + Card + PullToRefresh"};
 
 
     @Override
@@ -93,6 +96,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 14:
                         startActivity(new Intent(MainActivity.this, AudioActivity.class));
+                        break;
+                    case 15:
+                        startActivity(new Intent(MainActivity.this, ConnectivityReceiverActivity.class));
+                        break;
+                    case 16:
+                        startActivity(new Intent(MainActivity.this, RecyclerCardRefreshActivity.class));
                         break;
                 }
             }
