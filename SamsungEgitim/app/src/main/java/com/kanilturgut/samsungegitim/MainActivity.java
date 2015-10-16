@@ -12,6 +12,7 @@ import android.widget.ListView;
 
 import com.kanilturgut.samsungegitim.database.DatabaseActivity;
 import com.kanilturgut.samsungegitim.dialogs.DialogsActivity;
+import com.kanilturgut.samsungegitim.external_fonts.ExternalFontActivity;
 import com.kanilturgut.samsungegitim.lifecycle.ActivityOne;
 import com.kanilturgut.samsungegitim.lists.ListViewActivity;
 import com.kanilturgut.samsungegitim.lists.RecyclerCardRefreshActivity;
@@ -20,9 +21,12 @@ import com.kanilturgut.samsungegitim.menu.SideMenuActivity;
 import com.kanilturgut.samsungegitim.multimedia.camera_intent.AudioActivity;
 import com.kanilturgut.samsungegitim.multimedia.camera_intent.CameraIntentActivity;
 import com.kanilturgut.samsungegitim.multimedia.camera_intent.VideoActivity;
+import com.kanilturgut.samsungegitim.multiple_language.MultipleLanguageSupportAcitivity;
 import com.kanilturgut.samsungegitim.navigation_with_data.FirstActivity;
+import com.kanilturgut.samsungegitim.notification.NotificationActivity;
 import com.kanilturgut.samsungegitim.onSaveInstanceState.OnSaveInstanceExample1;
 import com.kanilturgut.samsungegitim.receiver.ConnectivityReceiverActivity;
+import com.kanilturgut.samsungegitim.service.ServiceActivity;
 import com.kanilturgut.samsungegitim.sharedpreferences.SharedPreferencesActivity;
 import com.kanilturgut.samsungegitim.threading.ThreadingActivity;
 
@@ -32,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private final String[] SUBJECTS = {"Activity Class", "Basic View Components", "Activity LifeCycle",
             "Navigation with Data", "onSaveInstanceState", "Lists", "Dialogs", "SharedPreferences",
             "Database", "Threading", "OptionMenu", "Side Menu", "Simple Camera", "Video", "Audio",
-            "BroadcastReceiver", "Recycler + Card + PullToRefresh"};
+            "BroadcastReceiver", "Recycler + Card + PullToRefresh", "External Fonts", "Notification",
+            "Service", "Multiple Language"};
 
 
     @Override
@@ -103,10 +108,21 @@ public class MainActivity extends AppCompatActivity {
                     case 16:
                         startActivity(new Intent(MainActivity.this, RecyclerCardRefreshActivity.class));
                         break;
+                    case 17:
+                        startActivity(new Intent(MainActivity.this, ExternalFontActivity.class));
+                        break;
+                    case 18:
+                        startActivity(new Intent(MainActivity.this, NotificationActivity.class));
+                        break;
+                    case 19:
+                        startActivity(new Intent(MainActivity.this, ServiceActivity.class));
+                        break;
+                    case 20:
+                        startActivity(new Intent(MainActivity.this, MultipleLanguageSupportAcitivity.class));
+                        break;
                 }
             }
         });
-
     }
 
     @Override

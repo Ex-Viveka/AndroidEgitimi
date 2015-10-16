@@ -1,90 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kanilturgut.samsungegitim" >
+<manifest
+    package="com.kanilturgut.samsungegitim"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="true" />
+        android:required="true"/>
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".navigation_with_data.FirstActivity"
-            android:label="@string/title_activity_first" >
+            android:label="@string/title_activity_first">
         </activity>
         <activity
             android:name=".navigation_with_data.SecondActivity"
-            android:label="@string/title_activity_second" >
+            android:label="@string/title_activity_second">
         </activity>
         <activity
             android:name=".onSaveInstanceState.OnSaveInstanceExample1"
-            android:label="@string/title_activity_on_save_instance_example1" >
+            android:label="@string/title_activity_on_save_instance_example1">
         </activity>
         <activity
             android:name=".onSaveInstanceState.OnSaveInstanceExample2"
-            android:label="@string/title_activity_on_save_instance_example2" >
+            android:label="@string/title_activity_on_save_instance_example2">
         </activity>
-        <activity android:name=".drawable.DrawableActivity" >
+        <activity android:name=".drawable.DrawableActivity">
         </activity>
-        <activity android:name=".lists.ListViewActivity" >
+        <activity android:name=".lists.ListViewActivity">
         </activity>
-        <activity android:name=".dialogs.DialogsActivity" >
+        <activity android:name=".dialogs.DialogsActivity">
         </activity>
-        <activity android:name=".sharedpreferences.SharedPreferencesActivity" >
+        <activity android:name=".sharedpreferences.SharedPreferencesActivity">
         </activity>
-        <activity android:name=".database.DatabaseActivity" >
+        <activity android:name=".database.DatabaseActivity">
         </activity>
-        <activity android:name=".threading.ThreadingActivity" >
+        <activity android:name=".threading.ThreadingActivity">
         </activity>
-        <activity android:name=".menu.OptionsMenuActivity" >
+        <activity android:name=".menu.OptionsMenuActivity">
         </activity>
         <activity
             android:name=".menu.SideMenuActivity"
             android:label="@string/title_activity_side_menu"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".multimedia.camera_intent.CameraIntentActivity" >
+        <activity android:name=".multimedia.camera_intent.CameraIntentActivity">
         </activity>
-        <activity android:name=".multimedia.camera_intent.VideoActivity" >
+        <activity android:name=".multimedia.camera_intent.VideoActivity">
         </activity>
-        <activity android:name=".multimedia.camera_intent.AudioActivity" >
+        <activity android:name=".multimedia.camera_intent.AudioActivity">
         </activity>
-        <activity android:name=".lifecycle.ActivityOne" >
+        <activity android:name=".lifecycle.ActivityOne">
         </activity>
-        <activity android:name=".lifecycle.ActivityTwo" >
+        <activity android:name=".lifecycle.ActivityTwo">
         </activity>
-        <activity android:name=".receiver.ConnectivityReceiverActivity" >
+        <activity android:name=".receiver.ConnectivityReceiverActivity">
         </activity>
 
         <receiver
             android:name=".receiver.BatteryInfoReceiver"
             android:enabled="true"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
             </intent-filter>
         </receiver>
 
-        <activity android:name=".lists.RecyclerCardRefreshActivity"
+        <activity
+            android:name=".lists.RecyclerCardRefreshActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".external_fonts.ExternalFontActivity">
+        </activity>
+        <activity android:name=".notification.NotificationActivity">
+        </activity>
+        <activity android:name=".notification.NormalNotificationActivity">
+        </activity>
+        <activity android:name=".notification.ActionNotitificationAcitivity">
+        </activity>
+        <activity android:name=".notification.FirstActionNotificationActivity">
+        </activity>
+        <activity android:name=".notification.SecondActionNotificationActivity">
+        </activity>
+
+        <service
+            android:name=".service.MyFantasticoService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity android:name=".service.ServiceActivity">
+        </activity>
+        <activity
+            android:name=".multiple_language.MultipleLanguageSupportAcitivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>

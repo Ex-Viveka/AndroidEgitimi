@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">SamsungEgitim</string>
 
     <string name="hello_world">Hello world!</string>
@@ -19,9 +21,10 @@
     <string name="button">Start Activity Two</string>
     <string name="title_activity_activity_two">Activity Two</string>
     <string name="close">Close Activity</string>
-    <string name="tvWelcome">Welcome</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
 
+
+    <string name="tvWelcome">Bienvenida</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Clave</string>
+    <string name="login">Iniciar Sesión</string>
 </resources>
