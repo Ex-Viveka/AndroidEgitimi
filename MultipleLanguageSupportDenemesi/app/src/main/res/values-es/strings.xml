@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="welcome">Bienvenida</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Clave</string>
+    <string name="login">Iniciar Sesión</string>
+
+</resources>
