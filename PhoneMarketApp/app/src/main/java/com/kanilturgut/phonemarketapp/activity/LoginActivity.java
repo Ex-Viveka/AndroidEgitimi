@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.kanilturgut.phonemarketapp.MySharedPreferences;
+import com.kanilturgut.phonemarketapp.helper.MySharedPreferences;
 import com.kanilturgut.phonemarketapp.R;
 import com.kanilturgut.phonemarketapp.backend.Endpoints;
 import com.kanilturgut.phonemarketapp.backend.Rest;

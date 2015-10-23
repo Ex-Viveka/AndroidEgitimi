@@ -1,5 +1,7 @@
 package com.kanilturgut.phonemarketapp.model;
 
+import java.io.Serializable;
+
 /**
  * Author   : kanilturgut
  * Date     : 21/10/15
@@ -7,19 +9,28 @@ package com.kanilturgut.phonemarketapp.model;
  */
 public class User {
 
+    private String _id;
     private String email;
     private String password;
     private String firstName;
     private String lastName;
 
-    public static User me;
+    private static User me;
 
     public static User getMe() {
         return me;
     }
 
-    public static void setMe(User me) {
-        User.me = me;
+    public static void setMe(User user) {
+        me = user;
+    }
+
+    public String getId() {
+        return _id;
+    }
+
+    public void setId(String _id) {
+        this._id = _id;
     }
 
     public String getEmail() {

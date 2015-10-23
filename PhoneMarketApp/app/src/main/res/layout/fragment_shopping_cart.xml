@@ -1,13 +1,22 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.kanilturgut.phonemarketapp.fragment.ShoppingCartFragment">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.kanilturgut.phonemarketapp.fragment.ShoppingCartFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="shopping cart"/>
+        android:layout_marginTop="?android:attr/actionBarSize"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvNotProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Sepetinizde ürün bulunmamaktadır."
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

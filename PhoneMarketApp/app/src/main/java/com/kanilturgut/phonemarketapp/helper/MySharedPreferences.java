@@ -1,4 +1,4 @@
-package com.kanilturgut.phonemarketapp;
+package com.kanilturgut.phonemarketapp.helper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,10 +12,11 @@ import com.kanilturgut.phonemarketapp.model.User;
  */
 public class MySharedPreferences {
 
-    private static final String PREFERENCE_NAME = "phone_market_preferences";
+    // Preference name
+    public static String PREFERENCE_NAME = "phone_market_preferences";
+    private static MySharedPreferences instance = null;
 
-    private static MySharedPreferences instance;
-
+    private final static String PREF_KEY_ID = "phone_market_id";
     private final static String PREF_KEY_EMAIL = "phone_market_email";
     private final static String PREF_KEY_PASSWORD = "phone_market_password";
 
@@ -33,34 +34,32 @@ public class MySharedPreferences {
         return instance;
     }
 
-    // login ile gelen user ı sp ye kaydeder
+
     public void setUserPref(User user) {
 
         SharedPreferences.Editor editor = sp.edit();
+        editor.putString(PREF_KEY_ID, user.getId());
         editor.putString(PREF_KEY_EMAIL, user.getEmail());
         editor.putString(PREF_KEY_PASSWORD, user.getPassword());
+
         editor.commit();
     }
 
-    // sp deki user ı döner
-    public User getUserFromPref() {
+    public User getUser() {
 
         User user = new User();
-
+        user.setId(sp.getString(PREF_KEY_ID, null));
         user.setEmail(sp.getString(PREF_KEY_EMAIL, null));
         user.setPassword(sp.getString(PREF_KEY_PASSWORD, null));
-
         return user;
     }
 
-    // sp den user ı siler
-    public void deleteUserFromPref() {
+    public void deleteUser() {
 
         SharedPreferences.Editor editor = sp.edit();
-
+        editor.remove(PREF_KEY_ID);
         editor.remove(PREF_KEY_EMAIL);
         editor.remove(PREF_KEY_PASSWORD);
-
         editor.commit();
     }
 }

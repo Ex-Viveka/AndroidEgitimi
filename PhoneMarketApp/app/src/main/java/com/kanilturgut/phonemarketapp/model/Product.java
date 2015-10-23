@@ -1,11 +1,13 @@
 package com.kanilturgut.phonemarketapp.model;
 
+import java.io.Serializable;
+
 /**
  * Author   : kanilturgut
  * Date     : 21/10/15
  * Time     : 19:25
  */
-public class Product {
+public class Product implements Serializable {
 
     private String name;
     private Description description;
@@ -13,7 +15,7 @@ public class Product {
     private String[] images;
     private Points points;
 
-    public class Description {
+    public class Description implements Serializable {
 
         private double cpu;
         private double ram;
@@ -80,7 +82,7 @@ public class Product {
         }
     }
 
-    public class Points {
+    public class Points implements Serializable {
 
         private int numberOfVote;
         private int sumOfVote;

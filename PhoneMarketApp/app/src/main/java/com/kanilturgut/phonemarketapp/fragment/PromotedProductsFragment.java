@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.kanilturgut.phonemarketapp.R;
+import com.kanilturgut.phonemarketapp.activity.DetailsActivity;
 import com.kanilturgut.phonemarketapp.backend.Endpoints;
 import com.kanilturgut.phonemarketapp.backend.Rest;
 import com.kanilturgut.phonemarketapp.model.Product;
@@ -59,6 +60,7 @@ public class PromotedProductsFragment extends Fragment {
 
         return rootView;
     }
+
 
     private void getPromotedProducts() {
 
@@ -111,14 +113,14 @@ public class PromotedProductsFragment extends Fragment {
                     .centerCrop()
                     .into(holder.ivProductImage);
 
-//            holder.mainCard.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Intent intent = new Intent(mContext, DetailsActivity.class);
-//                    intent.putExtra("product", product);
-//                    startActivity(intent);
-//                }
-//            });
+            holder.mainCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(mContext, DetailsActivity.class);
+                    intent.putExtra("product", product);
+                    startActivity(intent);
+                }
+            });
 
         }
 

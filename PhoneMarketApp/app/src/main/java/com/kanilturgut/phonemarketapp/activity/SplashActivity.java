@@ -7,11 +7,11 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 
-import com.kanilturgut.phonemarketapp.MySharedPreferences;
 import com.kanilturgut.phonemarketapp.R;
 import com.kanilturgut.phonemarketapp.backend.Endpoints;
 import com.kanilturgut.phonemarketapp.backend.Rest;
 import com.kanilturgut.phonemarketapp.backend.pojo.LoginPojo;
+import com.kanilturgut.phonemarketapp.helper.MySharedPreferences;
 import com.kanilturgut.phonemarketapp.model.User;
 
 import retrofit.Callback;
@@ -30,8 +30,8 @@ public class SplashActivity extends AppCompatActivity {
 
         MySharedPreferences mySharedPreferences = MySharedPreferences.getInstance(mContext);
 
-        String email = mySharedPreferences.getUserFromPref().getEmail();
-        final String pass = mySharedPreferences.getUserFromPref().getPassword();
+        String email = mySharedPreferences.getUser().getEmail();
+        final String pass = mySharedPreferences.getUser().getPassword();
 
         if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(pass)) {
 
